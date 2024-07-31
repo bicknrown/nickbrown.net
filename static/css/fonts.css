@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Zilla Slab";
+    src: url("/fonts/woff2/ZillaSlab-Regular.woff2"),
+         url("/fonts/woff/ZillaSlab-Regular.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Zilla Slab";
+    src: url("/fonts/woff2/ZillaSlab-Italic.woff2"),
+         url("/fonts/woff/ZillaSlab-Italic.woff");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Zilla Slab";
+    src: url("/fonts/woff2/ZillaSlab-Bold.woff2"),
+         url("/fonts/woff/ZillaSlab-Bold.woff");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/woff/Montserrat-Regular.woff"),
+         url("/fonts/woff2/Montserrat-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/woff/Montserrat-Bold.woff"),
+         url("/fonts/woff2/Montserrat-Bold.woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Liberation Mono";
+    src: url("/fonts/woff/LiberationMono.woff"),
+         url("/fonts/woff2/LiberationMono.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    font-family: "Zilla Slab",
+    serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
+
+    font-size: 100%;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+h1,h2,h3 {
+    font-family: "Montserrat",
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
+}
+code {
+  font-family:
+    "Liberation Mono",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 85%;
+}

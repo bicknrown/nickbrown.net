@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+
+<h1>{{ .Title | markdownify }}</h1>
+<div class="content-wrapper">
+
+  {{ .Content }}
+
+  <ul>
+     {{ $pages := .Pages }}
+     {{ $pages = .Site.RegularPages }}
+     {{ range (where $pages "Section" "!=" "") }}
+     <li>
+       <h1><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h1>
+       <h3><div class="date">{{ .Date.Format "Jan 2, 2006" }} by <a class="author" href="{{ .Params.author.link }}">{{ .Params.author.name }}</a></div></h3>
+
+       <div class="summary">
+	 {{ .Summary }}
+	 {{ if .Truncated }}
+	 <a href="{{ .RelPermalink }}">read more ...</a>
+	 {{ end }}
+       </div>
+       
+     </li>
+     {{ end }}
+   </ul>
+</div>
+{{ partial "footer.html" . }}

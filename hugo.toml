@@ -1,0 +1,61 @@
+baseurl = "https://nickbrown.net"
+enableEmoji = true
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+languageCode = "en-us"
+title = "nickbrown.net"
+titleCaseStyle = 'none'
+enableRobotsTXT = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineAnchors = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = false
+# style is unused because of noClasses = false
+style = "modus-vivendi"
+tabWidth = 2
+
+[permalinks]
+blog = "/blog/:year/:month/:day/:slug/"
+
+[outputs]
+home = ['html']
+section = ['html']
+taxonomy = ['html']
+term = ['html']
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[[menu.main]]
+name = "blog"
+url = "/blog/"
+weight = 1
+[[menu.main]]
+name = "about"
+url = "/about/"
+weight = 2
+[[menu.blog]]
+name = "categories"
+url = "/categories/"
+weight = 1
+[[menu.blog]]
+name = "tags"
+url = "/tags/"
+weight = 2
+
+[params]
+footer = '<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">nickbrown.net</span> © 2024 <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="/nick">Nick Brown</a>, licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license noopener noreferrer" class="licenseblock">CC BY-SA 4.0 <img class="licenselogo" alt="CC" src="/images/cc-cc.svg" /><img class="licenselogo" alt="BY" src="/images/cc-by.svg" /><img class="licenselogo" alt="SA" src="/images/cc-sa.svg" /></a></p>'
+copyright = '© 2024 Nick Brown, licensed under CC BY-SA 4.0'
+  [params.author]
+    name = "Nick Brown"
+    email = "nick@nickbrown.net"

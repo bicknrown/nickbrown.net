@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+<div class="article-meta">
+  <h1><span class="title">{{ .Title | markdownify }}</span></h1>
+  <div class="date">{{ if .Params.date }}{{ .Date.Format "Jan 2, 2006" }}{{ end }}{{ with .Params.author}} by <a class="author" href="{{ .link }}">{{ .name }}</a>{{ end }}</div>
+  <p class="terms">
+    {{ range $i := (slice "categories" "tags") }}
+    {{ with ($.Param $i) }}
+    {{ $i | title }}: {{ range $k := . }}<a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a> {{ end }}
+    {{ end }}
+    {{ end }}
+  </p>
+</div>
+<div class="content-wrapper">
+  <main>
+    {{ .Content }}
+  </main>
+</div>
+{{ partial "footer.html" . }}

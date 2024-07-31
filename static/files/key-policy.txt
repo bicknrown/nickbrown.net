@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+PGP key management policy for Nick Brown <nick@nickbrown.net>
+
+Last Updated 2024-07-31
+
+ACTIVE KEYS:
+
+pub   rsa4096/47AF495B3DCCE9C3 2021-11-23 [SC]
+      756651D7238C5B9658C3135A47AF495B3DCCE9C3
+uid                 [ultimate] Nick Brown <njbrown4@buffalo.edu>
+uid                 [ultimate] Nick Brown <nick@nickbrown.net>
+uid                 [ultimate] Nick Brown <nick@ke2bmc.net>
+sub   rsa4096/E99FBCD8EA8BF527 2021-11-23 [E]
+
+i only have one active and current key, to which is stored on encrypted volumes
+where accessed.
+
+every email that comes from the address <njbrown4@buffalo.edu>,
+<nick@nickbrown.net>, and <nick@ke2bmc.net> should contain a signature
+verifiable by this key, if it does not, you should assume it is not me.
+
+any changes to these policies will be reflected here (with the updated
+date and history of previous policies) before they are enforced.
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEdWZR1yOMW5ZYwxNaR69JWz3M6cMFAmaqVtcACgkQR69JWz3M
+6cPavBAAwaaId4sZZ8IiYpaFcUYtlhohKHxsV+ahmXMtMAeI7eUEJa+BGhqawBcH
+mp8BwfZT2jPVxTgZHD/v6Rzk2hrljawyVDCSRorFpNyCIU8vUBSf4E6MniWQDQ8B
+iw9sVvFTCZ+OtoEqlU9UZR3jJjaTQssdHJdOWzf5BfbXkAZfH3mUHjJwgHCHit3c
+LNKVofGq81iUyJyZtkoYI26YWQe4LepMr91au4oj819emP3tAy5+el+BOt7ONAkc
+hUXfOXFiWRt2wkWBAPlayMUKrVeByzejVMg+RHjRB7qsjMbTEMuVO9/Z9huNutVd
+Vt1FNvkichzdB5w9btxaRjZ6xlMS2KBsweqkb4v8TMelRMLIqBxu46+/gANKTVyP
+MzqWmnzkpeF26fCev3m4M4ttblt2SCN8H1YD0gP9zwn12l+NbMYXrYSzy9jzaTJX
+c58l9fZ0/olYTm9BT86wIA1l0pSfG72W+KWflOTVPBihMWX1PoCFj4j1ThOj5bpu
+ItUlqLLr91UrzwTtENko3IZvvLu0KKKGHlA1lLGuONw4JkEzN7GC69aH2dFkKIuU
+TSSjTSbWf5wp1iwLjiVmdGGuGXqDWd6j7gz9ab9UjKUvfQRaeRS5Tn2KLzjfW34J
+HXRH5bhlncHhfM42jZy7OA++bi7uHKDMr/0jQFoLsQIT6OI3zrA=
+=2x2K
+-----END PGP SIGNATURE-----

@@ -1,0 +1,37 @@
+<header>
+
+  <nav>
+    <ul>
+      {{ $title := lower .Title }}
+      {{ $section := lower .Section }}
+      <li class="pull-left {{ if .IsHome }}current{{ end }}">
+        <a href="{{ .Site.BaseURL }}">~/{{ lower .Site.Title}}</a>
+      </li>
+      {{ range .Site.Menus.main }}
+      {{ $name := lower .Name }}
+      <li class="pull-left {{ if eq $name $title }}current{{ else if eq $section $name }}current{{ else if eq $title (pluralize $name) }}current{{ end }}">
+        <a href="{{ .URL }}">~/{{ lower .Name }}</a>
+      </li>
+      {{ end }}
+
+      {{ if eq $title "blog" }}
+      {{ $name := lower .Name}}
+      {{ with .OutputFormats.Get "rss" -}}
+      <li class="pull-right">
+	{{ printf `<a rel=%q type=%q href=%q title=%q>~/rss</a>` .Rel .MediaType.Type .Permalink "rss" | safeHTML }}
+      </li>
+      {{ end }}
+      {{ end }}
+
+      {{ if or (eq $section "blog") (eq $title "tags") (eq $title "categories") }}
+      {{ range .Site.Menus.blog }}
+      {{ $name := lower .Name }}
+      <li class="pull-right {{ if eq $name $title }}current{{ else if eq $section $name }}current{{ else if eq $title (pluralize $name) }}current{{ end }}">
+        <a href="{{ .URL }}">~/{{ lower .Name }}</a>
+      </li>
+      {{ end }}     
+      {{ end }}
+      
+    </ul>
+  </nav>
+</header>
